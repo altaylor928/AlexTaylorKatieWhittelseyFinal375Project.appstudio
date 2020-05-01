@@ -1,7 +1,7 @@
 let req1 = []
 
 btnLogin.onclick=function(){
-  req1 = Ajax("http://radlab.creighton.edu/appStudio/authLDAP.php", "POST", "j_username=" + inptNetID.value + "&j_password=" + inptNetPass.value)
+  req1 = Ajax("http://radlab.creighton.edu/appStudio/authLDAP.php", "POST", "j_username=" + inptNetID.value + "&j_password=" + inptPass.value)
 if (req1.status == 200) {
      ChangeForm(Home)
 } else {
